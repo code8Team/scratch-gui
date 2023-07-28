@@ -815,14 +815,59 @@ class MenuBar extends React.Component {
                         </div>
                     ) : ((this.props.authorUsername && this.props.authorUsername !== this.props.username) ? (
                         <AuthorInfo
-                            className={styles.authorInfo}
-                            imageUrl={this.props.authorThumbnailUrl}
-                            projectId={this.props.projectId}
-                            projectTitle={this.props.projectTitle}
-                            userId={this.props.authorId}
-                            username={this.props.authorUsername}
-                        />
+                        className={styles.authorInfo}
+                        imageUrl=""
+                        projectTitle=""
+                        username=""
+                    />
                     ) : null)}
+                    <CommunityButton
+                            className={styles.menuBarButton}
+                            onClick={() => { window.open('https://code8.site/#page=work&id=' + window.id) }}
+                        >
+                            
+                        </CommunityButton>
+
+                        <Button
+                            className={styles.menuBarButton}
+                            id="setCover"
+                            onClick={() => {
+                                savecover(function (id) {
+                                    post({
+                                        url: 'work/info/update',
+                                        data: { id: workinfo.id, image: id, coveronly: 1 },
+                                        p: 'updatework'
+                                    }, function (d) {
+                                        console.log(d)
+                                    })
+                                })
+                            }}
+                        ><FormattedMessage
+                        defaultMessage="Set the stage as the cover"
+                        id="tw.menuBar.cover"
+                    />
+                        </Button>
+                        <Button
+                            className={styles.menuBarButton}
+                            onClick={() => {
+                                window.save()
+                            }}
+                            id="saveProject"
+                        ><FormattedMessage
+                        defaultMessage="save to server"
+                        id="tw.menuBar.save"
+                    />
+                        </Button>
+                        <Button
+                            className={styles.menuBarButton}
+                            onClick={() => {
+                                window.save(1)
+                            }}
+                        ><FormattedMessage
+                        defaultMessage="publish"
+                        id="tw.menuBar.publish"
+                    />
+                        </Button>
                     <div className={classNames(styles.menuBarItem)}>
                         {this.props.canShare ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
@@ -852,7 +897,7 @@ class MenuBar extends React.Component {
                         {this.props.canRemix ? remixButton : []}
                     </div>
                     <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
-                        {this.props.enableCommunity ? (
+                        {0 && this.props.enableCommunity ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
                                     {
@@ -889,13 +934,13 @@ class MenuBar extends React.Component {
                             target="_blank"
                         >
                             {/* todo: icon */}
-                            <Button className={styles.feedbackButton}>
+                            {/* <Button className={styles.feedbackButton}>
                                 <FormattedMessage
                                     defaultMessage="TurboWarp Feedback"
                                     description="Button to give feedback in the menu bar"
                                     id="tw.feedbackButton"
                                 />
-                            </Button>
+                            </Button> */}
                         </a>
                     </div>
                 </div>

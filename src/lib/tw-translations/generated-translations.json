@@ -3072,7 +3072,10 @@
         "tw.usernameModal.title": "更改用户名",
         "tw.viewFeaturedProjects": "点击以查看特色作品。",
         "tw.viewOnScratch": "在 Scratch 网站上查看作品",
-        "tw.webglModal.description": "很抱歉，您的浏览器或电脑可能缺少 {webGlLink}。运行此网站需要此技术。请尝试更新浏览器和图形驱动程序或重启电脑。"
+        "tw.webglModal.description": "很抱歉，您的浏览器或电脑可能缺少 {webGlLink}。运行此网站需要此技术。请尝试更新浏览器和图形驱动程序或重启电脑。",
+        "tw.menuBar.cover":"设置当前截图为封面",
+        "tw.menuBar.save":"保存",
+        "tw.menuBar.publish":"发布"
     },
     "zh-tw": {
         "tw.backpack.rename": "新名稱:",
