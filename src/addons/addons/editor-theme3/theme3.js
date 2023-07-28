@@ -196,7 +196,7 @@ export default async function ({ addon, console }) {
       colourSecondary = secondaryColor(extensionsCategory);
       colourTertiary = tertiaryColor(extensionsCategory);
     }
-    // TurboWarp Blocks
+    // Code8 Blocks
     if (this.type.startsWith("tw_")) {
       colour = primaryColor(twCategory);
       colourSecondary = secondaryColor(twCategory);

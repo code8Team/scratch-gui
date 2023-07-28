@@ -53,18 +53,18 @@ const Credits = () => (
     <main className={styles.main}>
         <header className={styles.headerContainer}>
             <h1 className={styles.headerText}>
-                TurboWarp Credits
+                Code8 Credits
             </h1>
         </header>
         <section>
             <p>
-                The TurboWarp project is made possible by the work of many volunteers.
+                The Code8 project is made possible by the work of many volunteers.
             </p>
         </section>
         <section>
             <h2>Scratch</h2>
             <p>
-                TurboWarp is based on the work of the <a href="https://scratch.mit.edu/credits">Scratch contributors</a> but is not endorsed by Scratch in any way.
+                Code8 is based on the work of the <a href="https://scratch.mit.edu/credits">Scratch contributors</a> but is not endorsed by Scratch in any way.
             </p>
             <p>
                 <a href="https://scratch.mit.edu/donate">
@@ -79,7 +79,7 @@ const Credits = () => (
         <section>
             <h2>Translators</h2>
             <p>
-                More than 100 people have helped translate TurboWarp and its addons into many languages
+                More than 100 people have helped translate Code8 and its addons into many languages
                 &mdash; far more than we could hope to list here.
             </p>
         </section>

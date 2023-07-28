@@ -49,7 +49,7 @@ import styles from './interface.css';
 
 if (window.parent !== window) {
     // eslint-disable-next-line no-alert
-    alert('This page contains an invalid TurboWarp embed. Please read https://docs.turbowarp.org/embedding for instructions to create a working embed.');
+    alert('This page contains an invalid Code8 embed. Please read https://docs.turbowarp.org/embedding for instructions to create a working embed.');
     throw new Error('Invalid embed');
 }
 
@@ -98,8 +98,8 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="TurboWarp is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that TurboWarp is not connected to Scratch"
+                    defaultMessage="Code8 is not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    description="Disclaimer that Code8 is not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
             </div>
@@ -123,11 +123,11 @@ const Footer = () => (
                 <div className={styles.footerSection}>
                     <a href="https://desktop.turbowarp.org/">
                         {/* Do not translate */}
-                        {'TurboWarp Desktop'}
+                        {'Code8 Desktop'}
                     </a>
                     <a href="https://packager.turbowarp.org/">
                         {/* Do not translate */}
-                        {'TurboWarp Packager'}
+                        {'Code8 Packager'}
                     </a>
                     <a href="https://docs.turbowarp.org/embedding">
                         <FormattedMessage
@@ -191,9 +191,9 @@ class Interface extends React.Component {
     }
     handleUpdateProjectTitle (title, isDefault) {
         if (isDefault || !title) {
-            document.title = `TurboWarp - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
+            document.title = `Code8 - ${this.props.intl.formatMessage(messages.defaultTitle)}`;
         } else {
-            document.title = `${title} - TurboWarp`;
+            document.title = `${title} -Code8`;
         }
     }
     render () {
@@ -324,8 +324,8 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="TurboWarp is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by inputting a project ID or URL above or choosing a featured project below."
-                                        description="Description of TurboWarp"
+                                        defaultMessage="Code8 is a Scratch mod that compiles projects to JavaScript to make them run really fast. Try it out by inputting a project ID or URL above or choosing a featured project below."
+                                        description="Description ofCode8"
                                         id="tw.home.description"
                                     />
                                 </p>

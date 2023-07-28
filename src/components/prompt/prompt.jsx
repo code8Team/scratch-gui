@@ -151,7 +151,7 @@ const PromptComponent = props => (
                                     rel="noopener noreferrer"
                                 >
                                     {/* Should not be translated */}
-                                    {'TurboWarp Packager'}
+                                    {'Code8 Packager'}
                                 </a>
                             )
                         }}

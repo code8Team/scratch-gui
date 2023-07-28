@@ -96,7 +96,7 @@
   --sa-block-field-background: var(--editorTheme3-sa-field, #3aa8a4);
 }
 
-.sa-block-color-TurboWarp {
+.sa-block-color-Code8 {
   --sa-block-background-primary: var(--editorTheme3-tw-primary, #ff4c4c);
   --sa-block-background-secondary: var(--editorTheme3-tw-secondary, #e64444);
   --sa-block-background-tertiary: var(--editorTheme3-tw-tertiary, #e64444);

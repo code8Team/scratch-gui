@@ -25,7 +25,7 @@ const manifest = {
     },
     {
       "type": "warning",
-      "text": "The \"TurboWarp keys\" will only work in TurboWarp, not in Scratch.",
+      "text": "The \"Code8 keys\" will only work inCode8, not in Scratch.",
       "id": "twKeysWarn"
     }
   ],
@@ -46,7 +46,7 @@ const manifest = {
     },
     {
       "dynamic": true,
-      "name": "Show TurboWarp keys",
+      "name": "Show Code8 keys",
       "id": "twKeys",
       "type": "boolean",
       "default": false

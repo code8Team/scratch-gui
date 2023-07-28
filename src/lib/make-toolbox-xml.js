@@ -734,7 +734,7 @@ const myBlocks = function () {
 // eslint-disable-next-line max-len
 const extraTurboWarpBlocks = `
 <block type="argument_reporter_boolean"><field name="VALUE">is compiled?</field></block>
-<block type="argument_reporter_boolean"><field name="VALUE">is TurboWarp?</field></block>
+<block type="argument_reporter_boolean"><field name="VALUE">isCode8?</field></block>
 `;
 /* eslint-enable no-unused-vars */
 
@@ -784,11 +784,11 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
     const operatorsXML = moveCategory('operators') || operators(isInitialSetup, isStage, targetId);
     const variablesXML = moveCategory('data') || variables(isInitialSetup, isStage, targetId);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId);
-    // Always display TurboWarp blocks as the first extension, if it exists,
+    // Always display Code8 blocks as the first extension, if it exists,
     // and also add an "is compiled?" block to the top.
-    let turbowarpXML = moveCategory('tw');
+    letCode8XML = moveCategory('tw');
     if (turbowarpXML && !turbowarpXML.includes(extraTurboWarpBlocks)) {
-        turbowarpXML = turbowarpXML.replace('<block', `${extraTurboWarpBlocks}<block`);
+       Code8XML =Code8XML.replace('<block', `${extraTurboWarpBlocks}<block`);
     }
 
     const everything = [

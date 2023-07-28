@@ -50,7 +50,7 @@ const isAlwaysTrustedForFetching = parsed => (
     // If we would trust loading an extension from here, we can trust loading resources too.
     isTrustedExtension(parsed.href) ||
 
-    // Any TurboWarp service such as trampoline
+    // Any Code8 service such as trampoline
     parsed.origin === 'https://turbowarp.org' ||
     parsed.origin.endsWith('.turbowarp.org') ||
     parsed.origin.endsWith('.turbowarp.xyz') ||

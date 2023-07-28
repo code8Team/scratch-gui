@@ -367,7 +367,7 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="TurboWarp Extension Gallery"
+                defaultMessage="Code8 Extension Gallery"
                 description="Name of extensions.turbowarp.org in extension library"
                 id="tw.extensionGallery.name"
             />
@@ -390,7 +390,7 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="TurboWarp Blocks"
+                defaultMessage="Code8 Blocks"
                 description="Name of TW extension"
                 id="tw.twExtension.name"
             />
